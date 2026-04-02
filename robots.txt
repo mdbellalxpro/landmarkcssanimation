@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://landmark-1ru7.onrender.com/sitemap.xml
