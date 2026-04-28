@@ -114,7 +114,6 @@ const Home = () => {
               </svg>
             </div>
           </div>
-
           <div className="icon-search">
             <div className="main-search">
               {showResult && (
