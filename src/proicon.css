@@ -1,0 +1,52 @@
+
+
+.pro-container {
+    overflow-y: auto;
+    background: black;
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+}
+
+.pro {
+
+    height: 80vh;
+    width: 70%;
+    left: 280px;
+    background-color: black;
+    opacity: 2;
+    z-index: 200;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 60px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+   
+}
+
+/* Scrollbar width */
+.pro::-webkit-scrollbar {
+  width: 8px;
+ 
+}
+
+
+/* Thumb */
+.pro::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+  min-height: 20px;
+}
+
+.loader h3,h2 {
+  text-align: center;
+}
+
+.loader .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}

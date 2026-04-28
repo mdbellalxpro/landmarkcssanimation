@@ -28,11 +28,11 @@
 
 /* Works on Chrome, Edge, Safari */
     .main-loader::-webkit-scrollbar {
-    width: 10px;
+     width: 10px;
     }
 
     .main-loader::-webkit-scrollbar-thumb {
-    background: #805BD0;
+    background: black;
     border-radius: 10px;
     }
 

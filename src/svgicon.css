@@ -1,0 +1,93 @@
+
+.svg-container {
+    background: black;
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+}
+
+.svg-content {
+    height: 80vh;
+    width: 70%;
+    left: 280px;
+    background-color: black;
+    opacity: 2;
+    z-index: 200;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 60px;
+    overflow-y: auto;
+    overflow-x: hidden;
+   
+}
+
+
+.card {
+  width: 250px;
+  height: 200px;
+  border: 1px solid rgba(190, 181, 190, 0.089);
+  background: #0F0C19;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -50px;
+}
+
+.card p{
+  position: absolute;
+  margin-top: 50px;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgba(240, 248, 255, 0.705);
+}
+
+.card .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.card button{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.all-svg-icon-desing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.main-svg-icon{
+  height: 50px;
+}
+       
+
+.icon-x-2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#1e293b;
+  border-radius:12px;
+  padding:15px;
+  transition:.3s;
+}
+
+.icon-x-2:hover{
+  transform:scale(1.15);
+}
+
+.icon-x-2 svg{
+  width:32px;
+  height:32px;
+  fill:;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}

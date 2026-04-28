@@ -3721,7 +3721,6 @@ export function SpinnerLoader68() {
   );
 }
 
-
 export function SpinnerLoader69() {
   const [copied, setCopied] = useState(false);
   const code = `      <div
@@ -3751,6 +3750,7 @@ export function SpinnerLoader69() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
   return (
     <div className="loader">
       <p>Wave Text 2</p>
@@ -6304,7 +6304,7 @@ export function SpinnerLoader111() {
           40% { transform: translateY(0); opacity: 1; }
           100% { transform: translateY(-2px); opacity: 0.6; }
           }
-      }`
+      }`;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -6345,7 +6345,7 @@ export function SpinnerLoader111() {
           100% { transform: translateY(-2px); opacity: 0.6; }
           }
         `}
-      </style>      
+      </style>
     </div>
   );
 }
@@ -7558,7 +7558,7 @@ export function SpinnerLoader131() {
   );
 }
 export function SpinnerLoader132() {
-   const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false);
   const code = `<div className="spiral-circle"></div>
 
         .spiral-circle {
@@ -8783,7 +8783,6 @@ export function SpinnerLoader153() {
   );
 }
 
-
 export function SpinnerLoader154() {
   const [copied, setCopied] = useState(false);
   const code = `<button className="btn11">Shiny Sweep</button>
@@ -8885,7 +8884,7 @@ export function SpinnerLoader155() {
           background: #ff0066;
           color: white;
         }
-      `
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -8953,7 +8952,7 @@ export function SpinnerLoader156() {
           width: 200px;
           height: 200px;
        }
-      `
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -10200,7 +10199,7 @@ export function SpinnerLoader178() {
           0% { background-position: 0% 50%; }
           100% { background-position: 400% 50%; }
         }
-      `
+      `;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
@@ -10238,7 +10237,6 @@ export function SpinnerLoader178() {
     </div>
   );
 }
-
 
 export function SpinnerLoader179() {
   const [copied, setCopied] = useState(false);
@@ -10282,7 +10280,6 @@ export function SpinnerLoader179() {
   );
 }
 export function SpinnerLoader180() {
-  
   const [copied, setCopied] = useState(false);
   const code = ` <h2 className="neon-text">Neon Flicker</h2>
 
@@ -10299,7 +10296,7 @@ export function SpinnerLoader180() {
           50% { opacity: 0.6; text-shadow: 0 0 20px #00f, 0 0 50px #0ff; }
           100% { opacity: 1; text-shadow: 0 0 15px #0ff, 0 0 40px #00f; }
         }
-      `
+      `;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
@@ -10331,7 +10328,6 @@ export function SpinnerLoader180() {
     </div>
   );
 }
-
 
 export function SpinnerLoader181() {
   const [copied, setCopied] = useState(false);
@@ -10821,7 +10817,7 @@ export function SpinnerLoader190() {
           0% { background-position: 0% 50%; }
           100% { background-position: 200% 50%; }
         }
-      `
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11113,7 +11109,7 @@ export function SpinnerLoader195() {
   );
 }
 export function SpinnerLoader196() {
-  const [copied, setCopied] = useState(false)
+  const [copied, setCopied] = useState(false);
   const code = ` <h2 className="wave-text">Wave Distortion</h2>
      
         .wave-text {
@@ -11128,7 +11124,7 @@ export function SpinnerLoader196() {
           0%, 100% { transform: skewX(0deg); }
           50% { transform: skewX(15deg); }
         }
-      `
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11306,6 +11302,7 @@ export function SpinnerLoader199() {
     </div>
   );
 }
+
 export function SpinnerLoader200() {
   const [copied, setCopied] = useState(false);
   const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
@@ -11328,7 +11325,7 @@ export function SpinnerLoader200() {
           0% { background-position: 0% 50%; }
           100% { background-position: 400% 50%; }
         }
-      `
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11363,11 +11360,30 @@ export function SpinnerLoader200() {
     </div>
   );
 }
-{
-  /* 
+
 export function SpinnerLoader201() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11375,39 +11391,86 @@ export function SpinnerLoader201() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <svg width="400" height="120">
+        <text x="50" y="80" class="logo-menvo">
+          MENVO
+        </text>
+      </svg>
 
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+      <style>{`
+        .logo-menvo{
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:5px;
+    fill:none;
+    stroke:#00ffcc;
+    stroke-width:2;
+    stroke-dasharray:500;
+    stroke-dashoffset:500;
+    animation: draw 3s linear forwards, glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes draw{
+    to{
+      stroke-dashoffset:0;
+    }
+  }
+
+  @keyframes glow{
+    from{
+      filter: drop-shadow(0 0 5px #00ffcc);
+    }
+    to{
+      filter: drop-shadow(0 0 20px #00ffcc);
+    }
+  }
+
+  .container{
+    text-align:center;
+  }
+
+  .sub{
+    color:white;
+    margin-top:20px;
+    opacity:0;
+    animation: fade 2s 2.5s forwards;
+  }
+
+  @keyframes fade{
+    to{opacity:1;}
+  }
       `}</style>
     </div>
   );
 }
+
+// components---------------------------------------------------------202---------------------------------------------------------------------------------//
 export function SpinnerLoader202() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11415,39 +11478,55 @@ export function SpinnerLoader202() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <h1 class="liquid">HELLO BOSS </h1>
 
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+      <style>{`
+        .liquid {
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(270deg,#3b82f6,#ec4899,#22c55e,#f59e0b);
+  background-size: 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: liquid 6s ease infinite;
+}
+
+@keyframes liquid {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
+}
       `}</style>
     </div>
   );
 }
+// components---------------------------------------------------------203---------------------------------------------------------------------------------//
 export function SpinnerLoader203() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11455,39 +11534,98 @@ export function SpinnerLoader203() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <div class="wrapper">
+        <h1 class="text" data-text="MENVO SHOP">
+          MENVO SHOP
+        </h1>
+      </div>
 
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+      <style>{`
+        /* container */
+.wrapper {
+  text-align: center;
+}
+
+/* main text */
+.text {
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #3b82f6, #8b5cf6, #ec4899, #22c55e);
+  background-size: 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 8s ease infinite;
+  letter-spacing: 2px;
+}
+
+/* subtitle */
+.sub {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #94a3b8;
+  animation: fadeUp 1.5s ease forwards;
+  opacity: 0;
+}
+
+/* glow blur effect */
+.text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: blur(25px);
+  opacity: 0.6;
+}
+
+/* animations */
+@keyframes gradientMove {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
       `}</style>
     </div>
   );
 }
+// components---------------------------------------------------------204---------------------------------------------------------------------------------//
 export function SpinnerLoader204() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11495,39 +11633,55 @@ export function SpinnerLoader204() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <h1 class="gradient-text">ROUNDED</h1>
 
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+      <style>{`
+       .gradient-text {
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #3b82f6, #ec4899, #22c55e);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 3s linear infinite;
+}
+
+@keyframes move {
+  100% {
+    background-position: 200%;
+  }
+}
       `}</style>
     </div>
   );
 }
+// components---------------------------------------------------------205---------------------------------------------------------------------------------//
 export function SpinnerLoader205() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11535,39 +11689,85 @@ export function SpinnerLoader205() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <svg width="250" height="100" viewBox="0 0 700 200">
+        <defs>
+          <linearGradient id="grad">
+            <stop offset="0%" stop-color="#3b82f6" />
+            <stop offset="50%" stop-color="#8b5cf6" />
+            <stop offset="100%" stop-color="#ec4899" />
+          </linearGradient>
+        </defs>
+
+        <text
+          x="50%"
+          y="50%"
+          dominant-baseline="middle"
+          text-anchor="middle"
+          class="logo-2"
+        >
+          ZENVORA
+        </text>
+      </svg>
 
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+      <style>{`
+        /* text style */
+.logo-2 {
+  font-size: 70px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  fill: transparent;
+  stroke: url(#grad);
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s ease forwards, fill 1.5s ease forwards 2.5s;
+}
+
+/* draw animation */
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+/* fill animation */
+@keyframes fill {
+  to { fill: url(#grad); }
+}
+
+/* glow */
+svg {
+  filter: drop-shadow(0 0 15px #8b5cf6);
+}
       `}</style>
     </div>
   );
 }
+// components---------------------------------------------------------206---------------------------------------------------------------------------------//
 export function SpinnerLoader206() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11575,39 +11775,73 @@ export function SpinnerLoader206() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <svg width="200" height="150">
+        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
+          MENVO
+        </text>
+      </svg>
 
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+      <style>{`
+      
+svg text {
+  font-size: 40px;
+  font-weight: bold;
+  fill: none;
+  stroke: #38bdf8;
+  stroke-width: 2;
+
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+
+  animation: drawLoop 3s linear infinite;
+}
+
+/* ANIMATION */
+@keyframes drawLoop {
+  0% {
+    stroke-dashoffset: 400;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 400;
+  }
+}
+
+
+
       `}</style>
     </div>
   );
 }
+// components---------------------------------------------------------207---------------------------------------------------------------------------------//
 export function SpinnerLoader207() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11615,39 +11849,52 @@ export function SpinnerLoader207() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+<svg viewBox="0 0 700 150">
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
+    MENVO
+  </text>
 
+  <rect class="rect" width="700" height="150"/>
+</svg>
+
+      
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+      <style>{`
+         .text {
+  font-size: 40px;
+  font-weight: bold;
+  fill: white;
+}
       `}</style>
     </div>
   );
-}
+}   
+// components---------------------------------------------------------208---------------------------------------------------------------------------------//
 export function SpinnerLoader208() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11655,39 +11902,85 @@ export function SpinnerLoader208() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <svg width="400" height="120">
+        <text x="50" y="80" class="logo-menvo">
+          MENVO
+        </text>
+      </svg>
 
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+      <style>{`
+        .logo-menvo{
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:5px;
+    fill:none;
+    stroke:#00ffcc;
+    stroke-width:2;
+    stroke-dasharray:500;
+    stroke-dashoffset:500;
+    animation: draw 3s linear forwards, glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes draw{
+    to{
+      stroke-dashoffset:0;
+    }
+  }
+
+  @keyframes glow{
+    from{
+      filter: drop-shadow(0 0 5px #00ffcc);
+    }
+    to{
+      filter: drop-shadow(0 0 20px #00ffcc);
+    }
+  }
+
+  .container{
+    text-align:center;
+  }
+
+  .sub{
+    color:white;
+    margin-top:20px;
+    opacity:0;
+    animation: fade 2s 2.5s forwards;
+  }
+
+  @keyframes fade{
+    to{opacity:1;}
+  }
       `}</style>
     </div>
   );
 }
+// components---------------------------------------------------------209---------------------------------------------------------------------------------//
 export function SpinnerLoader209() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11695,39 +11988,85 @@ export function SpinnerLoader209() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <svg width="400" height="120">
+        <text x="50" y="80" class="logo-menvo">
+          MENVO
+        </text>
+      </svg>
 
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+      <style>{`
+        .logo-menvo{
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:5px;
+    fill:none;
+    stroke:#00ffcc;
+    stroke-width:2;
+    stroke-dasharray:500;
+    stroke-dashoffset:500;
+    animation: draw 3s linear forwards, glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes draw{
+    to{
+      stroke-dashoffset:0;
+    }
+  }
+
+  @keyframes glow{
+    from{
+      filter: drop-shadow(0 0 5px #00ffcc);
+    }
+    to{
+      filter: drop-shadow(0 0 20px #00ffcc);
+    }
+  }
+
+  .container{
+    text-align:center;
+  }
+
+  .sub{
+    color:white;
+    margin-top:20px;
+    opacity:0;
+    animation: fade 2s 2.5s forwards;
+  }
+
+  @keyframes fade{
+    to{opacity:1;}
+  }
       `}</style>
     </div>
   );
 }
+// components---------------------------------------------------------210---------------------------------------------------------------------------------//
 export function SpinnerLoader210() {
   const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
+  const code = ` <h2 className="rainbow-text">Rainbow Flow</h2>
+
+      
+        .rainbow-text {
+          font-size: 30px ;
+          margin: 50px 40px ;
+          font-weight: bold;
+          background: linear-gradient(
+            90deg,
+            red, orange, yellow, green, cyan, blue, violet
+          );
+          background-size: 400% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: rainbow21 6s infinite linear;
+        }
+        @keyframes rainbow21 {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 400% 50%; }
+        }
+      `;
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
@@ -11735,483 +12074,63 @@ export function SpinnerLoader210() {
   };
   return (
     <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <svg width="400" height="120">
+        <text x="50" y="80" class="logo-menvo">
+          MENVO
+        </text>
+      </svg>
 
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader211() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+      <style>{`
+        .logo-menvo{
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:5px;
+    fill:none;
+    stroke:#00ffcc;
+    stroke-width:2;
+    stroke-dasharray:500;
+    stroke-dashoffset:500;
+    animation: draw 3s linear forwards, glow 2s ease-in-out infinite alternate;
+  }
 
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader211() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+  @keyframes draw{
+    to{
+      stroke-dashoffset:0;
+    }
+  }
 
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader212() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+  @keyframes glow{
+    from{
+      filter: drop-shadow(0 0 5px #00ffcc);
+    }
+    to{
+      filter: drop-shadow(0 0 20px #00ffcc);
+    }
+  }
 
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader213() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+  .container{
+    text-align:center;
+  }
 
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader214() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
+  .sub{
+    color:white;
+    margin-top:20px;
+    opacity:0;
+    animation: fade 2s 2.5s forwards;
+  }
 
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader215() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
-
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader216() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
-
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader217() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
-
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader218() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
-
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader219() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
-
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
-      `}</style>
-    </div>
-  );
-}
-export function SpinnerLoader220() {
-  const [copied, setCopied] = useState(false);
-  const code = `<div class="spinner1"></div>`;
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <div className="loader">
-     <p>Download Loader 14</p>
-      <div className="download14"></div>
-
-      <button className="copy-btn" onClick={handleCopy}>
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-        <style>{`
-        .download14 {
-          width: 8px; height: 40px;
-          background: #ef4444;
-          margin: 20px auto;
-          animation: grow14 1s infinite ease-in-out;
-          position: relative;
-        }
-        .download14::after {
-          content: '';
-          position: absolute;
-          bottom: -10px; left: -6px;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #ef4444;
-        }
-        @keyframes grow14 {
-          0%,100% { height: 20px; opacity: 0.7; }
-          50% { height: 40px; opacity: 1; }
-        }
+  @keyframes fade{
+    to{opacity:1;}
+  }
       `}</style>
     </div>
   );
 }
 
-*/
-}
 
-// import Search-components
-import Searchbar from "./components/searchbar.jsx";
-import Category from "./components/category.jsx";
 
 // import css
 import "./loader.css";
@@ -12219,7 +12138,6 @@ export default function AllLoaders() {
   return (
     <div className="loading">
       <div className="main">
-        <Category />
         <br />
         <div className="main-loader">
           <SpinnerLoader1 />
@@ -12417,6 +12335,15 @@ export default function AllLoaders() {
           <SpinnerLoader198 />
           <SpinnerLoader199 />
           <SpinnerLoader200 />
+          <SpinnerLoader201 />
+          <SpinnerLoader202 />
+          <SpinnerLoader203 />
+          <SpinnerLoader204 />
+          <SpinnerLoader205 />
+          <SpinnerLoader206 />
+          <SpinnerLoader207 />
+          <SpinnerLoader208 />
+          <SpinnerLoader209 />
         </div>
       </div>
     </div>

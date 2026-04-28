@@ -2,6 +2,147 @@
   background: #030306;
 }
 
+/* Container */
+
+.search-img {
+  display: flex;
+}
+
+.search-img svg {
+  width: 20px;
+  margin-top: 7px;
+}
+
+.search-img p{
+  font-size: 14px;
+  padding-top: 20px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main-search {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-menu {
+    height: 200px;
+    position: absolute;
+    width: 72%;
+    color: white;
+    bottom: -89%;
+    height: 80vh;
+    border-radius: 10px;
+    background: #000;
+    z-index: 200;
+    border: 1px solid rgb(16, 187, 16);
+}
+
+.search-menu {
+  display: grid;
+  grid-template-columns: repeat(5 , 1fr);
+  justify-content: center;
+  overflow-y: auto;
+  gap: 20px;
+  border: 1px solid #d3cfd821;
+  padding-left: 10px;
+}
+
+
+/* Chrome, Edge, Safari */
+.search-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+.search-menu::-webkit-scrollbar-track {
+  background: black; /* scrollbar bg */
+}
+
+.search-desin {
+  width: 250px;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #0F0C19;
+  position: relative;
+}
+
+.search-desin button {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom:0;
+}
+
+.search-desin p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #8E95BC;
+  
+}
+
+.search-desin .svg-icon svg {
+  width: 100px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+
+.search .input {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  width: 50%;
+  animation: glowPulse 2s infinite alternate;
+  border: 1px solid beige;
+  background: #111;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(#111, #111),
+                    linear-gradient(90deg, rgb(57,255,20), rgb(0,191,255), rgb(255,0,128));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  position: relative;
+  transition: 0.3s;
+
+  input {
+    padding: 15px;
+    background: none;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: white;
+    font-size: bold;
+  }
+
+  svg {
+    margin-right:10px;
+  }
+}
+
+.button button{
+  padding: 10px 30px;
+  background: rgba(200, 13, 206, 0.822);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -24,16 +165,6 @@
   gap: 20px;
 }
 
-.left-content button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background: #7a57cb7e;
-  color: #ffffffd8;
-  font-weight: 600;
-  cursor: pointer;
-  width: 130px;
-}
 
 .left-content .button-get {
   margin-top: 50px;
@@ -44,20 +175,51 @@
 
 .left-content {
   h2 {
+    font-weight: 800;
+    color: transparent;
+    background: linear-gradient(90deg, #f108cb, #0077ff);
+    -webkit-background-clip: text;
+    background-size: 200%;
+    animation: scan 2s infinite linear;
     font-size: 50px;
-    width: 80%;
-    font-weight: bold;
-    color: #af8df3;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    color: #fff;
+    letter-spacing: 2px;
+    margin: 0px 0px;
+    margin-left: -10px;
+    text-align: start;
+  }
+
+  @keyframes scan {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
   }
 
   p {
     font-size: 18px;
     font-weight: 600;
-    color: #815ad0;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: start;
+    color: #FBCF2E;
+    animation: pulse7 2s infinite ease-in-out;
+    padding-top:50px;
+  }
+
+  @keyframes pulse7 {
+    0%,
+    100% {
+      text-shadow:
+        0 0 5px #ff3366,
+        0 0 10px #ff6699;
+    }
+    50% {
+      text-shadow:
+        0 0 20px #ff0033,
+        0 0 40px #ff66cc;
+    }
   }
 }
 
@@ -119,35 +281,49 @@
   }
 }
 
-@media (max-width:540px) {
-    .hero {
-        padding: 20px 20px;
-    }
+@media (max-width: 540px) {
+  .hero {
+    padding: 20px 20px;
+  }
 }
 
-
-/* animation use */ 
-.ripple { position: relative; width: 40px; height: 40px; margin: 20px auto; }
-  .ripple span {
-    position: absolute; border: 4px solid #60a5fa;
-    border-radius: 50%; animation: ripple 1.2s infinite;
-    inset: 0;
+/* animation use */
+.ripple {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+}
+.ripple span {
+  position: absolute;
+  border: 4px solid #60a5fa;
+  border-radius: 50%;
+  animation: ripple 1.2s infinite;
+  inset: 0;
+}
+.ripple span:nth-child(2) {
+  animation-delay: -0.6s;
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
   }
-  .ripple span:nth-child(2) { animation-delay: -0.6s; }
-  @keyframes ripple {
-    0% { transform: scale(0); opacity: 1; }
-    100% { transform: scale(1.5); opacity: 0; }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
   }
+}
 
-  .animation {
-    position: absolute;
-    right: 30%;
-    top: 20%;
-  }
+.animation {
+  position: absolute;
+  right: 30%;
+  top: 20%;
+}
 
-  
 .rocket {
-  width: 20px; height: 40px;
+  width: 20px;
+  height: 40px;
   background: #facc15;
   margin: 20px auto;
   border-radius: 10px 10px 0 0;
@@ -155,22 +331,35 @@
   animation: fly 1.5s infinite ease-in-out;
 }
 .flame {
-  width: 10px; height: 10px;
+  width: 10px;
+  height: 10px;
   background: #f87171;
   border-radius: 50%;
   position: absolute;
-  left: 5px; bottom: -10px;
+  left: 5px;
+  bottom: -10px;
   animation: flame 0.5s infinite alternate;
 }
 @keyframes fly {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 @keyframes flame {
-  0% { transform: scaleY(1); opacity: 1; }
-  100% { transform: scaleY(1.5); opacity: 0.6; }
+  0% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1.5);
+    opacity: 0.6;
+  }
 }
-      
+
 .animation2 {
   position: absolute;
   right: 15%;
