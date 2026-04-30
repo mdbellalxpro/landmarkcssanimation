@@ -76,7 +76,7 @@ const Home = () => {
                 <h2>Loader Of Defferent Type Desing</h2>
                 <p>
                   We Provide the Best Quality CSS Animaton Loader And Other
-                  Products Fully Free{" "}
+                  Products Fully Free
                 </p>
                 <div className="button">
                   <button>Ai products</button>

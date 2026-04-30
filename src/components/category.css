@@ -31,18 +31,18 @@
 
 @media (max-width:1121px) {
    
-    .filter {
-    display: grid;
-    grid-template-columns: repeat(5, 0fr); 
-    justify-content: center;
-    gap:20px;
+    
 
     .icon:nth-of-type(8) {
       width: 120px;
     }
+
+    .filter .icon h2 {
+        font-size: 10px;
+    }
 }
 
-}
+
 
 @media (max-width:680px) {
     .filter {
