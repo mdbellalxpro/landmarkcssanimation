@@ -258,7 +258,7 @@
   }
 }
 
-@media (max-width:1212px) {
+@media (max-width:1280px) {
   .search-menu {
     grid-template-columns: repeat(4, 0fr);
     width: 80%;
