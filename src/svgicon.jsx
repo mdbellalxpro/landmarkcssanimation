@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { iconDB } from "./search.jsx";
+import { Icons } from "./search.jsx";
 // components---------------------------------------------------------210---------------------------------------------------------------------------------//
 
 import "./svgicon.css";
@@ -24,7 +24,7 @@ export default function Svgicon() {
       <div className="main">
         <br />
         <div className="main-loader">
-          {iconDB.map((item) => (
+          {Icons.map((item) => (
             <div key={item.svg} className="card">
               <div
                 className="icon"

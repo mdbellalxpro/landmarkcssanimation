@@ -1,4 +1,7 @@
 
+
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -99,6 +102,10 @@
     .loader {
         width: 200px;
     }
+
+    .card {
+        width: 200px;
+    }
 }
 
 @media (max-width:1280px) {
@@ -111,6 +118,11 @@
     .loader {
         width: 200px;
     }
+    
+    .card {
+        width: 200px;
+    }
+    
 }
 
 @media (max-width:1121px) {
@@ -127,6 +139,10 @@
     .loader {
         width: 230px;
     }
+
+     .card {
+        width: 230px;
+    }
 }
 
 @media (max-width:680px) {
@@ -135,6 +151,10 @@
     }
     
     .loader {
+        width: 180px;
+    }
+
+     .card {
         width: 180px;
     }
 }
@@ -147,4 +167,10 @@
     .loader {
         width: 250px;
     }
+
+    .card {
+        width: 240px;
+    }
 }
+
+

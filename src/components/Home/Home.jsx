@@ -4,9 +4,10 @@ import HomeImage from "../../image/original-051635e627bd249a516e576c7e11a954.web
 import Footer from "../../components/Footer/Footer.jsx";
 // import Search-components
 import Category from "../../components/category.jsx";
+import Homeanimation from "../../components/homeaniamton.jsx"
 
 import { useState } from "react";
-import { iconDB } from "../../search.jsx";
+import { Icons } from "../../search.jsx";
 
 // import image  
 
@@ -15,7 +16,7 @@ const Home = () => {
 
   const handleSearch = (e) => {
     if (e.key === "Enter") {
-      const filtered = iconDB.filter(icon =>
+      const filtered = Icons.filter(icon =>
         icon.name.toLowerCase().includes(search.toLowerCase())
       );
       setResult(filtered);
@@ -57,6 +58,7 @@ const Home = () => {
     <div>
       <div className="home-container">
         <div className="home">
+         <Homeanimation className='home-aniamiton'/> 
           <div className="home-content">
             <div className="animation">
               <div className="ripple">

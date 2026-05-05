@@ -1,5 +1,16 @@
+
+.hello {
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+}
+
+
 .home-container {
   background: #030306;
+  width: 100%;
 }
 
 /* Container */
@@ -265,19 +276,24 @@
     height: 90vh;
   }
   .search-desin{
-    max-width: 180px;
+    max-width: 200px;
   }
 }
 
 @media (max-width:1024px) {
   .search-menu {
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: repeat(4, 0fr);
     width: 80%;
     height: 90vh;
   }
   .search-desin{
-    max-width: 100%;
+    max-width: 180px;
   }
+
+  .hello {
+    display: none;
+  }
+
 }
 
 @media (max-width:826px) {
