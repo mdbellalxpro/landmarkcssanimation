@@ -87,7 +87,7 @@ const Home = () => {
             </div>
           </div>
           <div className="populer-svg-icon">
-            <div className="svg-icon">
+            <div className="svg-icon-menu">
               <div className="svg">
                 <svg
                   viewBox="0 0 24 24"
