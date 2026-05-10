@@ -36,9 +36,22 @@
     color: #fdd32cd3;
     text-decoration: none;
 }
+.nav .menu-style {
+   display: none;
+}
 
 @media (max-width:540px) {
     .navbar {
         padding: 20px 10px;
     }
+}
+
+@media (max-width:448px) {
+    .nav ul {
+       display: none;
+    }
+    
+   .navbar .menu-style {
+    display: block;
+   }
 }

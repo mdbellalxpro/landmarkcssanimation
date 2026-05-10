@@ -88,7 +88,7 @@ const Home = () => {
           </div>
           <div className="populer-svg-icon">
             <div className="svg-icon-menu">
-              <div className="svg">
+              <div className="svg svg-1">
                 <svg
                   viewBox="0 0 24 24"
                   stroke="#facc15"
@@ -98,7 +98,7 @@ const Home = () => {
                   <polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9" />
                 </svg>
               </div>
-              <div className="svg">
+              <div className="svg svg-2">
                 <svg
                   viewBox="0 0 24 24"
                   stroke="#facc15"
@@ -109,7 +109,7 @@ const Home = () => {
                   <line x1="16.5" y1="16.5" x2="21" y2="21" />
                 </svg>
               </div>
-              <div className="svg">
+              <div className="svg svg-3">
                 <svg viewBox="0 0 100 100">
                   <circle
                     cx="50"
@@ -131,7 +131,7 @@ const Home = () => {
                   </circle>
                 </svg>
               </div>
-              <div className="svg">
+              <div className="svg svg-4">
                 <svg
                   viewBox="0 0 24 24"
                   stroke="#38bdf8"
@@ -142,7 +142,7 @@ const Home = () => {
                   <path d="M5 10V20H19V10" />
                 </svg>
               </div>
-              <div className="svg">
+              <div className="svg svg-5">
                 <svg viewBox="0 0 24 24">
                   <circle cx="9" cy="20" r="1.5" fill="#f59e0b" />
                   <circle cx="17" cy="20" r="1.5" fill="#f59e0b" />

@@ -39,7 +39,7 @@
   }
 }
 
-@media (min-width:1024px) {
+@media (max-width:1024px) {
   .left-content {
     font-size: 30px;
     width: 130%;
@@ -49,7 +49,29 @@
     height: 100%;
   }
   
+ 
 }
+
+@media (max-width:1000px) {
+ 
+  .svg-icon-menu .svg.svg-5 {
+    display: none;
+  }
+
+  .populer-svg-icon {
+    padding-left: 70px;
+  }
+  
+}
+
+@media (max-width:768px) {
+ 
+  .svg-icon-menu .svg.svg-4 {
+    display: none;
+  }
+
+}
+
 
 .svg-icon-menu .svg {
   width: 150px;
@@ -68,6 +90,27 @@
 
 .svg-icon-menu .svg svg{
   width: 60px;
+}
+
+
+@media (max-width:656px) {
+ 
+  .svg-icon-menu .svg.svg-4 {
+    display: none;
+  }
+
+  .svg-icon-menu .svg {
+    height: 70px;
+    width: 70px;
+  }
+
+  .svg-icon-menu .svg  svg {
+    width: 30px;
+  }
+  .populer-svg-icon {
+    margin-top: 50px;
+    margin-bottom: -50px;
+  }
 }
 
 

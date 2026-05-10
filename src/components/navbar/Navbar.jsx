@@ -21,6 +21,11 @@ const Navbar = () => {
             <Link className="list-items" to="/contacts"></Link>
           </ul>
         </div>
+        <div className='menu-style'>
+            <svg viewBox="0 0 24 24" stroke="#38bdf8">
+              <path d="M4 6h16M4 12h10M4 18h7" />
+            </svg>
+        </div>
       </div>
     </div>
   );
