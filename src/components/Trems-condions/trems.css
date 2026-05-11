@@ -1,0 +1,161 @@
+/* TermsAndConditions.css */
+
+body {
+  background: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.terms-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Card */
+.terms-card {
+  width: 100%;
+  max-width: 950px;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.terms-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.terms-header h1 {
+  font-size: 42px;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.terms-header p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Intro Box */
+.intro-box {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.intro-box h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.intro-box p {
+  line-height: 1.8;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Sections */
+.terms-section {
+  margin-bottom: 35px;
+}
+
+.terms-section h2 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.terms-section p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Contact */
+.contact-box {
+  margin-top: 50px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 30px;
+}
+
+.contact-box h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.contact-box p {
+  color: #4b5563;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.contact-box a {
+  display: inline-block;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .terms-card {
+    padding: 30px 20px;
+  }
+
+  .terms-header h1 {
+    font-size: 32px;
+  }
+
+  .intro-box h3 {
+    font-size: 22px;
+  }
+
+  .terms-section h2,
+  .contact-box h2 {
+    font-size: 20px;
+  }
+
+  .terms-section p,
+  .contact-box p,
+  .intro-box p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-container {
+    padding: 20px 10px;
+  }
+
+  .terms-card {
+    padding: 25px 16px;
+    border-radius: 18px;
+  }
+
+  .terms-header h1 {
+    font-size: 28px;
+  }
+
+  .intro-box {
+    padding: 22px;
+  }
+
+  .intro-box h3 {
+    font-size: 20px;
+  }
+}

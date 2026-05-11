@@ -69,9 +69,9 @@ const Home = () => {
             </div>
             <div className="hero">
               <div className="left-content">
-                <h2><span style={{color: '#FCDD29'}}>SVG Modern!</span></h2>
-                <h2 className="use"><span>Use The Best CSS</span> Animation and</h2>
-                <h2>Loader Of Defferent Type Desing</h2>
+                <h2 className="home-ani"><span style={{color: '#FCDD29'}}>SVG Modern!</span></h2>
+                <h2 className="use home-ani"><span>Use The Best CSS</span> Animation and</h2>
+                <h2 className="home-ani">Loader Of Defferent Type Desing</h2>
                 <p>
                   We Provide the Best Quality CSS Animaton Loader And Other
                   Products Fully Free

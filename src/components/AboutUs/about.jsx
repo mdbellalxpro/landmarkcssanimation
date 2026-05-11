@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./about.css";
 
 const about = () => {
@@ -36,6 +36,11 @@ const about = () => {
                     <span class="au-icon purple">👤</span>
                     <p>User Friendly UI</p>
                   </div>
+                   <div className="terms-content">
+                     <Link className="terms-link" to="/privicy">PrivacyPolicy</Link>
+                     /
+                     <Link className='terms-link' to="/terms">TermsAndConditions</Link>
+                   </div>
                 </div>
               </div>
 

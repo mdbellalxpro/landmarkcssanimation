@@ -1,99 +1,116 @@
 
+// TermsAndConditions.jsx
+
 import React from "react";
+import "./trems.css";
 
 export default function TermsAndConditions() {
   return (
-    <div className="bg-gray-50 min-h-screen px-4 py-12 flex justify-center">
-      <div className="max-w-4xl w-full bg-white shadow-md rounded-2xl p-8 md:p-12">
+    <div className="terms-container">
+      <div className="terms-card">
 
-        {/* Title */}
-        <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
-          Terms & Conditions
-        </h1>
+        {/* Header */}
+        <div className="terms-header">
+          <h1>Terms & Conditions</h1>
+          <p>Last updated: April 2026</p>
+        </div>
 
-        <p className="text-center text-gray-500 mb-10">
-          Last updated: April 2026
-        </p>
+        {/* Intro */}
+        <div className="intro-box">
+          <h3>Welcome to Our Website</h3>
+
+          <p>
+            Our platform provides high-quality SVG Icons, CSS Animations,
+            Animated UI Components, Brand Logos, and modern Web Design resources.
+          </p>
+
+          <p>
+            By using our website, you agree to follow the terms and conditions below.
+          </p>
+        </div>
 
         {/* Section 1 */}
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            1. Acceptance of Terms
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
+        <div className="terms-section">
+          <h2>1. Acceptance of Terms</h2>
+
+          <p>
             By accessing and using this website, you agree to be bound by these
             Terms and Conditions. If you do not agree, please do not use our services.
           </p>
         </div>
 
         {/* Section 2 */}
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            2. Use of Our Service
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
-            You agree to use our website only for lawful purposes. You must not
-            misuse or attempt to harm the website or its functionality.
+        <div className="terms-section">
+          <h2>2. Use of Our Services</h2>
+
+          <p>
+            You may use our SVG Icons, CSS Animations, Brand Logos,
+            and design resources for personal or commercial projects,
+            unless otherwise stated.
+          </p>
+
+          <p>
+            You must not copy, resell, or redistribute our resources
+            without permission.
           </p>
         </div>
 
         {/* Section 3 */}
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            3. User Accounts
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
-            If you create an account, you are responsible for maintaining the
-            confidentiality of your login information and all activities under your account.
+        <div className="terms-section">
+          <h2>3. Intellectual Property</h2>
+
+          <p>
+            All website content including SVG graphics, animations,
+            code snippets, designs, and branding materials are protected
+            by copyright and intellectual property laws.
           </p>
         </div>
 
         {/* Section 4 */}
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            4. Intellectual Property
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
-            All content, logos, designs, and materials on this website are
-            protected by intellectual property laws and belong to the website owner.
+        <div className="terms-section">
+          <h2>4. User Responsibility</h2>
+
+          <p>
+            Users are responsible for how they use downloadable files,
+            source code, animations, and design assets from our platform.
           </p>
         </div>
 
         {/* Section 5 */}
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            5. Limitation of Liability
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
-            We are not responsible for any damages or losses arising from the use
-            or inability to use our website or services.
+        <div className="terms-section">
+          <h2>5. Limitation of Liability</h2>
+
+          <p>
+            We are not responsible for any damages, losses,
+            or technical issues caused by using our resources or services.
           </p>
         </div>
 
         {/* Section 6 */}
-        <div className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            6. Changes to Terms
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
-            We may update these Terms & Conditions at any time. Continued use of
-            the website means you accept the updated terms.
+        <div className="terms-section">
+          <h2>6. Changes to Terms</h2>
+
+          <p>
+            We may update these Terms & Conditions at any time without prior notice.
+            Continued use of the website means you accept the updated terms.
           </p>
         </div>
 
         {/* Contact */}
-        <div className="mt-10 border-t pt-6">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            Contact Us
-          </h2>
-          <p className="text-gray-600">
-            If you have any questions about these Terms, contact us at:{" "}
-            <span className="text-blue-600">support@yourwebsite.com</span>
+        <div className="contact-box">
+          <h2>Contact Us</h2>
+
+          <p>
+            If you have any questions regarding these Terms & Conditions,
+            contact us anytime.
           </p>
+
+          <a href="mailto:support@yourwebsite.com">
+           
+          </a>
         </div>
 
       </div>
     </div>
   );
 }
-

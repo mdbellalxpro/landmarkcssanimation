@@ -1,0 +1,286 @@
+
+/* BlogFeed.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+/* Page */
+
+.feed-page {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* Header */
+
+.feed-header {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  padding: 70px 20px;
+  text-align: center;
+  color: white;
+}
+
+.feed-header h1 {
+  font-size: 55px;
+  margin-bottom: 16px;
+}
+
+.feed-header p {
+  font-size: 18px;
+  color: #dbeafe;
+}
+
+/* Feed */
+
+.feed-container {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  margin-top: -40px;
+  padding: 0 15px;
+}
+
+/* Create Post */
+
+.create-post {
+  background: white;
+  padding: 22px;
+  border-radius: 28px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+  position: sticky;
+  top: 15px;
+  z-index: 50;
+}
+
+.create-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+.create-top input {
+  flex: 1;
+  border: none;
+  background: #f3f4f6;
+  padding: 16px 20px;
+  border-radius: 40px;
+  outline: none;
+  font-size: 15px;
+}
+
+.create-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.create-actions button {
+  border: none;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 12px 18px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.create-actions button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* Post */
+
+.post-card {
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 35px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+/* Header */
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.author-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.author-box h3 {
+  font-size: 18px;
+  color: #111827;
+}
+
+.author-box span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.post-category {
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 10px 18px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Image */
+
+.post-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.post-image img:hover {
+  transform: scale(1.04);
+}
+
+/* Content */
+
+.post-content {
+  padding: 28px;
+}
+
+.post-content h2 {
+  font-size: 32px;
+  color: #111827;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.post-content p {
+  color: #6b7280;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* Actions */
+
+.post-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+}
+
+.post-actions button {
+  border: none;
+  background: #f3f4f6;
+  padding: 13px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.post-actions button:hover {
+  background: #dbeafe;
+}
+
+.read-btn {
+  margin-left: auto;
+  background: linear-gradient(135deg, #2563eb, #4f46e5) !important;
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .feed-header h1 {
+    font-size: 38px;
+  }
+
+  .feed-header p {
+    font-size: 15px;
+  }
+
+  .post-image img {
+    height: 320px;
+  }
+
+  .post-content h2 {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .feed-header {
+    padding: 55px 20px;
+  }
+
+  .feed-header h1 {
+    font-size: 30px;
+  }
+
+  .create-post {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .post-card {
+    border-radius: 22px;
+  }
+
+  .post-content {
+    padding: 22px;
+  }
+
+  .post-content h2 {
+    font-size: 21px;
+  }
+
+  .post-image img {
+    height: 240px;
+  }
+
+}
