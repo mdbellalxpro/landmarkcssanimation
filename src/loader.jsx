@@ -11849,15 +11849,14 @@ export function SpinnerLoader207() {
   };
   return (
     <div className="loader">
-<svg viewBox="0 0 700 150">
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
-    MENVO
-  </text>
+      <svg viewBox="0 0 700 150">
+        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
+          MENVO
+        </text>
 
-  <rect class="rect" width="700" height="150"/>
-</svg>
+        <rect class="rect" width="700" height="150" />
+      </svg>
 
-      
       <button className="copy-btn" onClick={handleCopy}>
         {copied ? "Copied!" : "Copy Code"}
       </button>
@@ -11870,7 +11869,7 @@ export function SpinnerLoader207() {
       `}</style>
     </div>
   );
-}   
+}
 // components---------------------------------------------------------208---------------------------------------------------------------------------------//
 export function SpinnerLoader208() {
   const [copied, setCopied] = useState(false);
@@ -12130,7 +12129,588 @@ export function SpinnerLoader210() {
   );
 }
 
+// components---------------------------------------------------------210---------------------------------------------------------------------------------//
+export function SpinnerLoader211() {
+  const [copied, setCopied] = useState(false);
+  const code = ` 
+  <div class="ux-grid-spin-loader"></div>
 
+        .ux-grid-spin-loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  --c: #00bfff;
+
+  background:
+    linear-gradient(0deg ,color-mix(in srgb, var(--c) 50%, transparent) 30%,#0000 0 70%,var(--c) 0) 50%/8% 100%,
+    linear-gradient(90deg,color-mix(in srgb, var(--c) 25%, transparent) 30%,#0000 0 70%,color-mix(in srgb, var(--c) 75%, transparent) 0) 50%/100% 8%;
+
+  background-repeat: no-repeat;
+  animation: uxGridSpinAnim 1s infinite steps(12);
+}
+
+.ux-grid-spin-loader::before,
+.ux-grid-spin-loader::after {
+   content: "";
+   grid-area: 1/1;
+   border-radius: 50%;
+   background: inherit;
+   opacity: 0.915;
+   transform: rotate(30deg);
+}
+
+.ux-grid-spin-loader::after {
+   opacity: 0.83;
+   transform: rotate(60deg);
+}
+
+@keyframes uxGridSpinAnim {
+  100% { transform: rotate(1turn); }
+}
+
+      `;
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+  return (
+    <div className="loader">
+      <div class="ux-grid-spin-loader"></div>
+
+      <button className="copy-btn" onClick={handleCopy}>
+        {copied ? "Copied!" : "Copy Code"}
+      </button>
+      <style>{`
+        .ux-grid-spin-loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  --c: #00bfff;
+  margin-left:100px;
+  background:
+    linear-gradient(0deg ,color-mix(in srgb, var(--c) 50%, transparent) 30%,#0000 0 70%,var(--c) 0) 50%/8% 100%,
+    linear-gradient(90deg,color-mix(in srgb, var(--c) 25%, transparent) 30%,#0000 0 70%,color-mix(in srgb, var(--c) 75%, transparent) 0) 50%/100% 8%;
+
+  background-repeat: no-repeat;
+  animation: uxGridSpinAnim 1s infinite steps(12);
+}
+
+.ux-grid-spin-loader::before,
+.ux-grid-spin-loader::after {
+   content: "";
+   grid-area: 1/1;
+   border-radius: 50%;
+   background: inherit;
+   opacity: 0.915;
+   transform: rotate(30deg);
+}
+
+.ux-grid-spin-loader::after {
+   opacity: 0.83;
+   transform: rotate(60deg);
+}
+
+@keyframes uxGridSpinAnim {
+  100% { transform: rotate(1turn); }
+}
+      `}</style>
+    </div>
+  );
+}
+export function SpinnerLoader212() {
+  const [copied, setCopied] = useState(false);
+  const code = ` 
+ <div class="neo-spin-ring"></div>
+
+          .neo-spin-ring {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid transparent;
+  border-right-color: #8e44ff;
+  border-radius: 50%;
+  animation: neoSpinMain 1s infinite linear;
+}
+
+.neo-spin-ring::before,
+.neo-spin-ring::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+  animation: neoSpinSlow 2s infinite ease-in-out;
+}
+
+.neo-spin-ring::after {
+  margin: 8px;
+  border-right-color: #00d4ff;
+  animation-duration: 3s;
+  opacity: 0.85;
+}
+
+/* animations */
+@keyframes neoSpinMain {
+  100% { transform: rotate(1turn); }
+}
+
+@keyframes neoSpinSlow {
+  0% { transform: rotate(0deg); opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { transform: rotate(360deg); opacity: 0.6; }
+}
+      `;
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+  return (
+    <div className="loader">
+      <div class="neo-spin-ring"></div>
+
+      <button className="copy-btn" onClick={handleCopy}>
+        {copied ? "Copied!" : "Copy Code"}
+      </button>
+      <style>{`
+        .neo-spin-ring {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid transparent;
+  border-right-color: #8e44ff;
+  border-radius: 50%;
+  animation: neoSpinMain 1s infinite linear;
+  margin-left:100px;
+}
+
+.neo-spin-ring::before,
+.neo-spin-ring::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+  animation: neoSpinSlow 2s infinite ease-in-out;
+}
+
+.neo-spin-ring::after {
+  margin: 8px;
+  border-right-color: #00d4ff;
+  animation-duration: 3s;
+  opacity: 0.85;
+}
+
+/* animations */
+@keyframes neoSpinMain {
+  100% { transform: rotate(1turn); }
+}
+
+@keyframes neoSpinSlow {
+  0% { transform: rotate(0deg); opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { transform: rotate(360deg); opacity: 0.6; }
+}
+      `}</style>
+    </div>
+  );
+}
+export function SpinnerLoader213() {
+  const [copied, setCopied] = useState(false);
+  const code = ` 
+ <div class="ux-loader-ring"></div>
+
+   .ux-loader-ring {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid transparent;
+
+  border-color: #6c5ce7 transparent;
+  border-radius: 50%;
+  animation: uxSpinMain 1s infinite linear;
+}
+
+.ux-loader-ring::before,
+.ux-loader-ring::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+/* middle ring */
+.ux-loader-ring::before {
+  border-color: #00d2d3 transparent;
+  animation: uxSpinMain .5s infinite linear reverse;
+}
+
+/* inner ring */
+.ux-loader-ring::after {
+  margin: 8px;
+  border-color: #ff6b6b transparent;
+  opacity: 0.8;
+}
+
+@keyframes uxSpinMain {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+      `;
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+  return (
+    <div className="loader">
+      <div class="ux-loader-ring"></div>
+
+      <button className="copy-btn" onClick={handleCopy}>
+        {copied ? "Copied!" : "Copy Code"}
+      </button>
+      <style>{`
+        .ux-loader-ring {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid transparent;
+  margin-left:100px;
+  border-color: #6c5ce7 transparent;
+  border-radius: 50%;
+  animation: uxSpinMain 1s infinite linear;
+}
+
+.ux-loader-ring::before,
+.ux-loader-ring::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+/* middle ring */
+.ux-loader-ring::before {
+  border-color: #00d2d3 transparent;
+  animation: uxSpinMain .5s infinite linear reverse;
+}
+
+/* inner ring */
+.ux-loader-ring::after {
+  margin: 8px;
+  border-color: #ff6b6b transparent;
+  opacity: 0.8;
+}
+
+@keyframes uxSpinMain {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+      `}</style>
+    </div>
+  );
+}
+export function SpinnerLoader214() {
+  const [copied, setCopied] = useState(false);
+  const code = ` 
+<div class="ux-loader"></div>
+   .ux-loader {
+      --d:22px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      color: #ff4d6d;
+    
+      box-shadow: 
+        calc(1*var(--d))      calc(0*var(--d))      0 0,
+        calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+        calc(0*var(--d))      calc(1*var(--d))      0 2px,
+        calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+        calc(-1*var(--d))     calc(0*var(--d))      0 4px,
+        calc(-0.707*var(--d)) calc(-0.707*var(--d)) 0 5px,
+        calc(0*var(--d))      calc(-1*var(--d))     0 6px;
+
+      animation: ux-spin 1s infinite steps(8);
+    }
+
+    /* UNIQUE ANIMATION NAME */
+    @keyframes ux-spin {
+      100% {
+        transform: rotate(1turn);
+      }
+    }
+      `;
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+  return (
+    <div className="loader">
+      <div class="ux-loader"></div>
+
+      <button className="copy-btn" onClick={handleCopy}>
+        {copied ? "Copied!" : "Copy Code"}
+      </button>
+      <style>{`
+          /* UNIQUE LOADER CLASS */
+    .ux-loader {
+      --d:22px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      color: #ff4d6d;
+      margin-left:120px;
+      box-shadow: 
+        calc(1*var(--d))      calc(0*var(--d))      0 0,
+        calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+        calc(0*var(--d))      calc(1*var(--d))      0 2px,
+        calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+        calc(-1*var(--d))     calc(0*var(--d))      0 4px,
+        calc(-0.707*var(--d)) calc(-0.707*var(--d)) 0 5px,
+        calc(0*var(--d))      calc(-1*var(--d))     0 6px;
+
+      animation: ux-spin 1s infinite steps(8);
+    }
+
+    /* UNIQUE ANIMATION NAME */
+    @keyframes ux-spin {
+      100% {
+        transform: rotate(1turn);
+      }
+    }
+      `}</style>
+    </div>
+  );
+}
+export function SpinnerLoader215() {
+  const [copied, setCopied] = useState(false);
+  const code = ` 
+
+  <div class="px_loader_wrap">
+  <div class="px_loader_core"></div>
+  <div class="px_loader_dot"></div>
+</div>
+
+  /* Wrapper (unique) */
+  .px_loader_wrap{
+    position:relative;
+    width:140px;
+    height:140px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+   
+  }
+
+  /* Glow Ring */
+  .px_loader_wrap::before{
+    content:"";
+    position:absolute;
+    inset:-20px;
+    border-radius:50%;
+    background:conic-gradient(
+      #ff0066,
+      #7c3aed,
+      #00c2ff,
+      #00ff99,
+      #ff0066
+    );
+    filter:blur(25px);
+    opacity:.7;
+    animation:px_glow 3s linear infinite;
+  }
+
+  /* Loader core */
+  .px_loader_core{
+    width:90px;
+    aspect-ratio:1;
+    position:relative;
+    display:grid;
+    border-radius:50%;
+    -webkit-mask:
+      radial-gradient(circle 8px,#0000 94%,#000),
+      conic-gradient(#000 0 0);
+    animation:px_spin 1s infinite linear;
+  }
+
+  .px_loader_core,
+  .px_loader_core::before,
+  .px_loader_core::after{
+    background:
+      radial-gradient(closest-side at 50% 12.5%,
+      #ffffff 96%,#0000) 50% 0/18% 80% repeat-y,
+
+      radial-gradient(closest-side at 12.5% 50%,
+      #00e5ff 96%,#0000) 0 50%/80% 18% repeat-x;
+  }
+
+  .px_loader_core::before,
+  .px_loader_core::after{
+    content:"";
+    grid-area:1/1;
+    border-radius:50%;
+  }
+
+  .px_loader_core::before{
+    transform:rotate(30deg);
+  }
+
+  .px_loader_core::after{
+    transform:rotate(60deg);
+  }
+
+  /* Center dot */
+  .px_loader_dot{
+    position:absolute;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:
+      0 0 10px #fff,
+      0 0 25px #00e5ff,
+      0 0 45px #7c3aed;
+    z-index:2;
+    animation:px_pulse 1.5s ease-in-out infinite;
+  }
+
+  /* Animations */
+  @keyframes px_spin{
+    100%{ transform:rotate(360deg); }
+  }
+
+  @keyframes px_glow{
+    100%{ transform:rotate(360deg); }
+  }
+
+  @keyframes px_pulse{
+    0%,100%{ transform:scale(1); }
+    50%{ transform:scale(1.4); }
+  }
+      `;
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+  return (
+    <div className="loader">
+      <div class="px_loader_wrap">
+        <div class="px_loader_core"></div>
+        <div class="px_loader_dot"></div>
+      </div>
+      <button className="copy-btn" onClick={handleCopy}>
+        {copied ? "Copied!" : "Copy Code"}
+      </button>
+      <style>{`
+         /* Wrapper (unique) */
+  .px_loader_wrap{
+    position:relative;
+    width:140px;
+    height:140px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-left:50px;
+  }
+
+  /* Glow Ring */
+  .px_loader_wrap::before{
+    content:"";
+    position:absolute;
+    inset:-20px;
+    border-radius:50%;
+    background:conic-gradient(
+      #ff0066,
+      #7c3aed,
+      #00c2ff,
+      #00ff99,
+      #ff0066
+    );
+    filter:blur(25px);
+    opacity:.7;
+    animation:px_glow 3s linear infinite;
+  }
+
+  /* Loader core */
+  .px_loader_core{
+    width:90px;
+    aspect-ratio:1;
+    position:relative;
+    display:grid;
+    border-radius:50%;
+    -webkit-mask:
+      radial-gradient(circle 8px,#0000 94%,#000),
+      conic-gradient(#000 0 0);
+    animation:px_spin 1s infinite linear;
+  }
+
+  .px_loader_core,
+  .px_loader_core::before,
+  .px_loader_core::after{
+    background:
+      radial-gradient(closest-side at 50% 12.5%,
+      #ffffff 96%,#0000) 50% 0/18% 80% repeat-y,
+
+      radial-gradient(closest-side at 12.5% 50%,
+      #00e5ff 96%,#0000) 0 50%/80% 18% repeat-x;
+  }
+
+  .px_loader_core::before,
+  .px_loader_core::after{
+    content:"";
+    grid-area:1/1;
+    border-radius:50%;
+  }
+
+  .px_loader_core::before{
+    transform:rotate(30deg);
+  }
+
+  .px_loader_core::after{
+    transform:rotate(60deg);
+  }
+
+  /* Center dot */
+  .px_loader_dot{
+    position:absolute;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:
+      0 0 10px #fff,
+      0 0 25px #00e5ff,
+      0 0 45px #7c3aed;
+    z-index:2;
+    animation:px_pulse 1.5s ease-in-out infinite;
+  }
+
+  /* Animations */
+  @keyframes px_spin{
+    100%{ transform:rotate(360deg); }
+  }
+
+  @keyframes px_glow{
+    100%{ transform:rotate(360deg); }
+  }
+
+  @keyframes px_pulse{
+    0%,100%{ transform:scale(1); }
+    50%{ transform:scale(1.4); }
+  }
+      `}</style>
+    </div>
+  );
+}
 
 // import css
 import "./loader.css";
@@ -12140,6 +12720,11 @@ export default function AllLoaders() {
       <div className="main">
         <br />
         <div className="main-loader">
+          <SpinnerLoader211 />
+          <SpinnerLoader212 />
+          <SpinnerLoader213 />
+          <SpinnerLoader214 />
+          <SpinnerLoader215 />
           <SpinnerLoader1 />
           <SpinnerLoader2 />
           <SpinnerLoader3 />

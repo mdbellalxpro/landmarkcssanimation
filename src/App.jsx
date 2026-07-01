@@ -9,6 +9,8 @@ import Contacts from "./components/Contact/contact.jsx";
 import Privicy from "./components/Privacy Policy/privicy.jsx";
 import Terms from "./components/Trems-condions/terms.jsx";
 import Blog from "./components/Blog/blog.jsx";
+import SingleBlog from "./components/Blog/SingleBlog.jsx";
+
 
 // import states
 import { BrowserRouter, Routes, Route,} from "react-router-dom";
@@ -29,6 +31,7 @@ const App = () => {
               <Route path="/privicy" element={<Privicy />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<SingleBlog />} />
             </Routes>
           </BrowserRouter>
         </div>
