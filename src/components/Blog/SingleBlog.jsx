@@ -18,7 +18,7 @@ const SingleBlog = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/blogs/${slug}`);
+        const res = await fetch(`https://landmarkcssanimationbackend.onrender.com/api/blogs/${slug}`);
         const data = await res.json();
 
         if (data.success) {
@@ -38,7 +38,7 @@ const SingleBlog = () => {
   // Increase View
   // ===========================
   useEffect(() => {
-    fetch(`http://localhost:5000/api/blogs/${slug}/view`, {
+    fetch(`https://landmarkcssanimationbackend.onrender.com/api/blogs/${slug}/view`, {
       method: "PATCH",
     }).catch(() => {});
   }, [slug]);
@@ -49,7 +49,7 @@ const SingleBlog = () => {
   const handleLike = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/blogs/${slug}/like`,
+        `https://landmarkcssanimationbackend.onrender.com/api/blogs/${slug}/like`,
         {
           method: "PATCH",
         }
@@ -80,7 +80,7 @@ const SingleBlog = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/blogs/${slug}/comment`,
+        `https://landmarkcssanimationbackend.onrender.com/api/blogs/${slug}/comment`,
         {
           method: "POST",
           headers: {
