@@ -1,18 +1,13 @@
-import express  from "express";
+import express from "express";
 const router = express.Router();
 
-import Blog  from "./models/Blog.js"; // তোমার Blog model
-
+import Blog from "./models/Blog.js"; // তোমার Blog model
 router.get("/sitemap.xml", async (req, res) => {
   try {
     const blogs = await Blog.find({}, { slug: 1, updatedAt: 1 });
-
     const baseUrl = "https://landmarkcssanimation.onrender.com";
-
     let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
-
-    // Static Pages
     xml += `
   <url>
     <loc>${baseUrl}/</loc>
