@@ -146,12 +146,12 @@ const SingleBlog = () => {
 
       <link
         rel="canonical"
-        href={`https://landmarkcssanimation.onrender.com/blog/${blog.slug}.html`}
+        href={`https://landmarkcssanimation.onrender.com/blog/${blog.slug}`}
       />
 
       <meta
         property="og:url"
-        content={`https://landmarkcssanimation.onrender.com/blog/${blog.slug}.html`}
+        content={`https://landmarkcssanimation.onrender.com/blog/${blog.slug}`}
       />
 
       <meta property="og:title" content={blog.title} />

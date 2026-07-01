@@ -6,6 +6,9 @@ import morgan from "morgan";
 
 import connectDB from "./config/DB.js";
 import blogRoutes from "./routes/blogroutes.js";
+import sitemapRoute  from './sitemap.js';
+
+
 
 dotenv.config();
 
@@ -17,6 +20,7 @@ app.use(cors());
 
 app.use(express.json());
 app.use("/api/blogs", blogRoutes);
+app.use("/", sitemapRoute);
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
