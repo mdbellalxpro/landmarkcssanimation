@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./singleBlog.css";
+import { Helmet } from "react-helmet-async";
 
+
+import "./singleBlog.css";
 const SingleBlog = () => {
   const { slug } = useParams();
 
@@ -128,6 +130,41 @@ const SingleBlog = () => {
   }
 
   return (
+   <>
+     <Helmet>
+      <title>{blog.title} | Landmark CSS Animation</title>
+
+      <meta
+        name="description"
+        content={blog.metaDescription || blog.content?.substring(0, 160)}
+      />
+
+      <meta
+        name="keywords"
+        content={blog.tags?.join(", ") || ""}
+      />
+
+      <link
+        rel="canonical"
+        href={`https://landmarkcssanimation.onrender.com/blog/${blog.slug}.html`}
+      />
+
+      <meta
+        property="og:url"
+        content={`https://landmarkcssanimation.onrender.com/blog/${blog.slug}.html`}
+      />
+
+      <meta property="og:title" content={blog.title} />
+      <meta
+        property="og:description"
+        content={blog.metaDescription || blog.content?.substring(0, 160)}
+      />
+      <meta property="og:image" content={blog.image} />
+      <meta property="og:type" content="article" />
+
+      <meta name="robots" content="index,follow" />
+    </Helmet>
+
     <section className="sb-single-blog">
       <div className="sb-hero-image">
         <img src={blog.image} alt={blog.title} />
@@ -243,7 +280,10 @@ const SingleBlog = () => {
           )}
         </div>
       </div>
+
     </section>
+   </>
+   
   );
 };
 
