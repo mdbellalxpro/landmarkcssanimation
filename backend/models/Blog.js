@@ -45,6 +45,21 @@ const blogSchema = new mongoose.Schema(
       required: true,
     },
 
+     htmlCode: {
+      type: String,
+      required: true,
+    },
+
+    cssCode: {
+      type: String,
+      required: true,
+    },
+
+    tailwindCode: {
+      type: String,
+      default: "",
+    },
+
     image: {
       type: String,
       required: true,
